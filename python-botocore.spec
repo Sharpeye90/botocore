@@ -1,10 +1,10 @@
-%global pkgname botocore
+%global pkgname c2botocore
 %define buildid @BUILDID@
 
 Name:           python-%{pkgname}
 # NOTICE - Updating this package requires updating python-boto3
 Version:        1.20.14
-Release:        CROC2%{?buildid}%{?dist}
+Release:        CROC2TEST%{?buildid}%{?dist}
 Summary:        Low-level, data-driven core of boto 3
 
 License:        ASL 2.0
@@ -69,5 +69,6 @@ rm -rf tests/integration
 %changelog
 * Mon Jun 28 2021 Max Kotov <makotov@croc.ru> - 1.20.14-CROC2
 - Introduce KS Public API
+
 * Wed Feb 24 2021 Alexander Chernev <achernev@croc.ru> - 1.20.14-CROC1
 - Update to latest botocore - 1.20.14
